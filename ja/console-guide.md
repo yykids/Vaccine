@@ -123,7 +123,7 @@ C:\Users\Administrator>
 4\. 웹콘솔 새로고침 및 사용시작
 
 <center>![alt](http://static.toastoven.net/prod_vaccine/window-2.jpg)</center>
-<center>[그림3] 윈도우 계열 사용시작</center>
+<center>[그림4] 윈도우 계열 사용시작</center>
 
 ## Vaccine Agent 비활성화 절차
 
@@ -132,7 +132,7 @@ C:\Users\Administrator>
 1\. 웹콘솔 사용중지
 
 <center>![alt](http://static.toastoven.net/prod_vaccine/linux-3.jpg)</center>
-<center>[그림3] 리눅스 계열 사용중지</center>
+<center>[그림5] 리눅스 계열 사용중지</center>
 
 2\. 백신 Agent 삭제
 
@@ -141,7 +141,7 @@ C:\Users\Administrator>
 1\. 웹콘솔 사용중지
 
 <center>![alt](http://static.toastoven.net/prod_vaccine/window-3.jpg)</center>
-<center>[그림3] 윈도우 계열 사용중지</center>
+<center>[그림6] 윈도우 계열 사용중지</center>
 
 2\. 백신 Agent 삭제
 
