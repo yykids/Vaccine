@@ -14,6 +14,7 @@ Vaccine Agent 활성화 및 비활성화 절차와 상품 이용중 특정 상�
 2\. 설치 대상 인스턴스 터미널 접속
 
 3\. 관리자 권한으로 Agent 스크립트 생성 및 실행
+
 * vi 편집기 등으로 스크립트를 생성합니다.
 * 생성한 스크립트 파일의 권한을 변경합니다.
 * 파일을 실행합니다.
@@ -56,6 +57,7 @@ Command session completed.
 ```
 
 4\. 웹콘솔 새로고침 및 사용시작
+
 * 새로고침을 클릭하면 현황 리스트에 설치된 Agent 정보가 표시됩니다.
 * 사용시작 버튼을 클릭하면 상품 사용이 시작됩니다.
 <center>![alt](http://static.toastoven.net/prod_vaccine/linux-2.jpg)</center>
@@ -71,6 +73,7 @@ Command session completed.
 2\. 설치 대상 인스턴스 터미널 접속
 
 3\. 관리자 권한으로 Agent 스크립트 생성 및 실행
+
    * 노트패드 등으로 스크립트 파일을 생성합니다.
    * 관리자 권한으로 cmd 창을 활성화 합니다.
    * powershell -file "파일경로/파일명" 형태로 실행합니다.
@@ -126,6 +129,7 @@ C:\Users\Administrator>
 ```
 
 4\. 웹콘솔 새로고침 및 사용시작
+
 * 새로고침을 클릭하면 현황 리스트에 설치된 Agent 정보가 표시됩니다.
 * 사용시작 버튼을 클릭하면 상품 사용이 시작됩니다.
 <center>![alt](http://static.toastoven.net/prod_vaccine/window-2.jpg)</center>
@@ -136,28 +140,33 @@ C:\Users\Administrator>
 ### 리눅스 계열 Agent
 
 1\. 웹콘솔 사용중지
+
 * 사용종료 버튼을 클릭하여 백신 사용을 중지합니다.
 <center>![alt](http://static.toastoven.net/prod_vaccine/linux-3.jpg)</center>
 <center>[그림5] 리눅스 계열 사용중지</center>
 
 2\. 백신 Agent 삭제
+
 * 인스턴스에 접속하여 Vaccine Agent를 삭제합니다.
    * CentOS: rpm -e ds_agent 실행
    * Debian/Ubuntu: apt-get remove ds-agent 실행
 ### 윈도우 계열 Agent
 
 1\. 웹콘솔 사용중지
+
 * 사용종료 버튼을 클릭하여 백신 사용을 중지합니다.
 <center>![alt](http://static.toastoven.net/prod_vaccine/window-3.jpg)</center>
 <center>[그림6] 윈도우 계열 사용중지</center>
 
 2\. 백신 Agent 삭제
+
 * 인스턴스에 접속하여 Vaccine Agent를 삭제합니다.
    * 프로그램 및 기능 메뉴에서 "Trend Micro Deep Security Agent" 삭제
 ## Vaccine Quick 가이드
 
 ### 파일 복원 가이드
 1\. 파일 복원
+
 * 복원 툴을 [다운로드](http://static.toastoven.net/prod_vaccine/QFAdminUtil_win32.zip) 합니다.
 * 다운로드한 QFAdminUtil_win32.zip 파일을 windows OS 환경에서 압축해제 합니다.
 * QDecrypt.exe 실행 후 격리된 파일을 열고 파일을 복원합니다.
@@ -165,6 +174,7 @@ C:\Users\Administrator>
 <center>[그림7] 복원 툴 실행 및 격리된 파일 복원</center>
 
 2\. 격리 파일 위치
+
 * Linux : /var/opt/ds_agent/guest/0000-0000-0000/quarantined
 * Windows : C:\ProgramData\Trend Micro\AMSP\quarantine
    * "보호된 운영체제 파일 숨기기" 해제 및 "숨김 파일, 폴더 및 드라이브 표시"를 체크하여야 합니다.
@@ -172,9 +182,11 @@ C:\Users\Administrator>
 ### 임시 조치 가이드
 
 1\. 삭제
+
 * Vaccine Agent 비활성화 절차 > 백신 Agent 삭제 가이드에 따라 백신을 임시로 삭제합니다.
 
 2\. 분석파일 전달
+
 * 재발 방지를 위한 원인분석을 위해 다음 경로의 파일을 수집하여 고객센터로 분석을 요청합니다.
    * 리눅스
       * /opt/ds_agent/dsa_control -d 실행
@@ -186,6 +198,7 @@ C:\Users\Administrator>
 ### Image 복제시 사용 가이드
 
 Vaccine Agent가 포함된 Private Image 기반 Instacne 생성시 백신 사용 가이드입니다.
+
 * 인스턴스에 접속하여 각각의 해당하는 스크립트를 생성 및 실행하여 설치합니다.
 * Vaccine Agent 활성화 가이드에 따라 서비스 화면에서 새로고침 및 사용시작을 통해 사용이 가능합니다.
 
@@ -212,6 +225,7 @@ FOR /F "tokens=1" %%a IN ('powershell -Command "((Get-WmiObject win32_networkada
 
 ### Auto Scale 사용 가이드
 Auto Scale 기능을 활용하여 기본 Image 와 Vaccine Agent가 포함된 복제 Image 기반 Instacne 생성시 백신 사용 가이드입니다. 
+
 * Auto Scale > Instance Template > 예약 스크립트에 각각의 해당하는 스크립트를 입력하여 템플릿 생성 및 Scaling Group 을 사용합니다.
 * Vaccine Agent 활성화 가이드에 따라 서비스 화면에서 새로고침 및 사용시작을 통해 사용이 가능합니다.
 
