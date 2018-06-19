@@ -167,7 +167,7 @@ C:\Users\Administrator>
 ### 파일 복원 가이드
 1\. 파일 복원
 
-* 복원 툴을 [다운로드](https://alpha-docs.toast.com/ko/Security/Vaccine/ko/console-guide/) 합니다.
+* 복원 툴을 [다운로드](http://static.toastoven.net/prod_vaccine/QFAdminUtil_win32.zip) 합니다.
 * 다운로드한 QFAdminUtil_win32.zip 파일을 windows OS 환경에서 압축해제 합니다.
 * QDecrypt.exe 실행 후 격리된 파일을 열고 파일을 복원합니다.
 <center>![alt](http://static.toastoven.net/prod_vaccine/restore.jpg)</center>
