@@ -74,9 +74,9 @@ Command session completed.
 
 3\. 관리자 권한으로 Agent 스크립트 생성 및 실행
 
-   * 노트패드 등으로 스크립트 파일을 생성합니다.
-   * 관리자 권한으로 cmd 창을 활성화 합니다.
-   * powershell -file "파일경로/파일명" 형태로 실행합니다.
+* 노트패드 등으로 스크립트 파일을 생성합니다.
+* 관리자 권한으로 cmd 창을 활성화 합니다.
+* powershell -file "파일경로/파일명" 형태로 실행합니다.
 ```
 Microsoft Windows [Version 6.3.9600]
 (c) 2013 Microsoft Corporation. All rights reserved.
@@ -148,8 +148,8 @@ C:\Users\Administrator>
 2\. 백신 Agent 삭제
 
 * Instance에 접속하여 Vaccine Agent를 삭제합니다.
-   * CentOS: rpm -e ds_agent 실행
-   * Debian/Ubuntu: apt-get remove ds-agent 실행
+    * CentOS: rpm -e ds_agent 실행
+    * Debian/Ubuntu: apt-get remove ds-agent 실행
 ### 윈도우 계열 Agent
 
 1\. 웹콘솔 사용중지
@@ -161,7 +161,7 @@ C:\Users\Administrator>
 2\. 백신 Agent 삭제
 
 * Instance에 접속하여 Vaccine Agent를 삭제합니다.
-   * 프로그램 및 기능 메뉴에서 "Trend Micro Deep Security Agent" 삭제
+    * 프로그램 및 기능 메뉴에서 "Trend Micro Deep Security Agent" 삭제
 ## Vaccine Quick 가이드
 
 ### 파일 복원 가이드
@@ -177,7 +177,7 @@ C:\Users\Administrator>
 
 * Linux : /var/opt/ds_agent/guest/0000-0000-0000/quarantined
 * Windows : C:\ProgramData\Trend Micro\AMSP\quarantine
-   * "보호된 운영체제 파일 숨기기" 해제 및 "숨김 파일, 폴더 및 드라이브 표시"를 체크하여야 합니다.
+    * "보호된 운영체제 파일 숨기기" 해제 및 "숨김 파일, 폴더 및 드라이브 표시"를 체크하여야 합니다.
 
 ### 임시 조치 가이드
 
@@ -188,12 +188,12 @@ C:\Users\Administrator>
 2\. 분석파일 전달
 
 * 재발 방지를 위한 원인분석을 위해 다음 경로의 파일을 수집하여 고객센터로 분석을 요청합니다.
-   * 리눅스
-      * /opt/ds_agent/dsa_control -d 실행
-      * /var/opt/ds_agent/diag/랜덤10자리숫자.zip 파일 분석 요청
-   * 윈도우
-      * C:\Program Files\Trend Micro\Deep Security Agent\dsa_control -d 실행
-      * C:\Program Files\Trend Micro\Deep Security Agent\diag\랜덤10자리숫자.zip 파일 분석 요청
+    * 리눅스
+        * /opt/ds_agent/dsa_control -d 실행
+        * /var/opt/ds_agent/diag/랜덤10자리숫자.zip 파일 분석 요청
+    * 윈도우
+        * C:\Program Files\Trend Micro\Deep Security Agent\dsa_control -d 실행
+        * C:\Program Files\Trend Micro\Deep Security Agent\diag\랜덤10자리숫자.zip 파일 분석 요청
 * 상세한 분석을 위해 문제발생 상황에서 디버깅 수행후 생성된 파일을 추가로 요청할 수 있습니다.
 ### Image 복제시 사용 가이드
 
