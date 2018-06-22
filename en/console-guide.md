@@ -202,8 +202,10 @@ Vaccine Agent가 포함된 Private Image 기반 Instacne 생성시 백신 사용
 * Instance에 접속하여 각각의 해당하는 스크립트를 생성 및 실행하여 설치합니다.
 * Vaccine Agent 활성화 가이드에 따라 서비스 화면에서 새로고침 및 사용시작을 통해 사용이 가능합니다.
 
-※ 주의사항: 스크립트 내용중 "group:앱키"의 앱키는 서비스 화면의 URL & Appkey 메뉴내 Appkey 값으로 변경해야 합니다.
-※ 주의사항: 사용을 원치 않는 복제 Instance는 불필요한 리소스가 낭비되지 않도록 설치된 Agent 삭제를 권고 드립니다.
+※ 주의사항
+* 스크립트 내용중 "group:앱키"의 앱키는 서비스 화면의 URL & Appkey 메뉴내 Appkey 값으로 변경해야 합니다.
+* 사용을 원치 않는 복제 Instance는 불필요한 리소스가 낭비되지 않도록 설치된 Agent 삭제를 권고 드립니다.
+* '사용시작' 후 상품 사용 상태는 즉시 '상품종료' 상태가 활성화되지만, 백신 동작은 최초 설치와 마찬가지로 최대 약 10분 뒤부터 정상 동작됩니다.
 
 1\. 리눅스 계열 Agent 스크립트
 
@@ -222,36 +224,10 @@ HOSTNAME=`hostname`
 FOR /F "tokens=1" %%a IN ('powershell -Command "((Get-WmiObject win32_networkadapterconfiguration | select ipaddress) | findstr .*[0-9].\.).Split(',')[0].Split('{')[-1]"') DO set IP=%%a
 "%PROGRAMFILES%\Trend Micro\Deep Security Agent\dsa_control" -r | "%PROGRAMFILES%\Trend Micro\Deep Security Agent\dsa_control" -a dsm://106.249.21.88:4120/ "group:앱키" "displayname:%IP%"
 ```
+※ 배치 파일(.bat)로 생성하여 스크립트를 실행해야 합니다.
 
 ### Auto Scale 사용 가이드
-Auto Scale 기능을 활용하여 기본 Image 와 Vaccine Agent가 포함된 복제 Image 기반 Instacne 생성시 백신 사용 가이드입니다. 
-
-* Auto Scale > Instance Template > 예약 스크립트에 각각의 해당하는 스크립트를 입력하여 템플릿 생성 및 Scaling Group 을 사용합니다.
-* Vaccine Agent 활성화 가이드에 따라 서비스 화면에서 새로고침 및 사용시작을 통해 사용이 가능합니다.
-
-※ 주의사항: 스크립트 내용중 "group:앱키"의 앱키는 서비스 화면의 URL & Appkey 메뉴내 Appkey 값으로 변경해야 합니다.
-1\. Linux - 기본 Image
-```
-서비스 화면에서 기본으로 제공되는 스크립트를 복사하기 버튼으로 메모리에 복사한뒤 예약 스크립트에 입력하여 사용합니다.
-```
-2\. Linux - 복제 Image
-```
-#!/bin/bash
-IP=`ifconfig eth0 | grep -w -o '[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}' | head -1`
-HOSTNAME=`hostname`
-/opt/ds_agent/dsa_control -r
-/opt/ds_agent/dsa_control -a dsm://106.249.21.88:4120/ "group:앱키" "displayname:$IP" "hostname:$HOSTNAME"
-```
-3\. Windows - 기본 Image
-```
-서비스 화면에서 기본으로 제공되는 스크립트를 복사하기 버튼으로 메모리에 복사한뒤 예약 스크립트에 입력하여 사용합니다.
-```
-4\. Windows - 복제 Image
-```
-@echo off
-FOR /F "tokens=1" %%a IN ('powershell -Command "((Get-WmiObject win32_networkadapterconfiguration | select ipaddress) | findstr .*[0-9].\.).Split(',')[0].Split('{')[-1]"') DO set IP=%%a
-"%PROGRAMFILES%\Trend Micro\Deep Security Agent\dsa_control" -r | "%PROGRAMFILES%\Trend Micro\Deep Security Agent\dsa_control" -a dsm://106.249.21.88:4120/ "group:앱키" "displayname:%IP%"
-```
+Auto Scale을 이용한 백신 기능 사용 안내는 고객센터로 문의하시면 상세히 설명드리겠습니다.
 
 ## 운영 문의
 
