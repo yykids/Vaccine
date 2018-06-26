@@ -18,15 +18,15 @@
 * Agent 설치 실패시 지원 서비스를 제공합니다.
 * 백신 이벤트 탐지 관련 문의시 대응 서비스를 제공합니다.
 * 정상 파일 오진 신고 시 패턴 업데이트 서비스 및 파일 복원 가이드를 제공합니다.
-    * 복원 서비스는 콘솔內 구현 예정이며, 상세 내용은 [사용자 가이드](https://alpha-docs.toast.com/ko/Security/Vaccine/ko/console-guide/)를 참고하시기 바랍니다.
+    * 복원 서비스는 콘솔內 구현 예정이며, 상세 내용은 [사용자 가이드](https://docs.toast.com/ko/Security/Vaccine/ko/console-guide/)를 참고하시기 바랍니다.
 * 백신으로 인한 Instance 오동작시 조치 가이드 및 기술 지원 서비스를 제공합니다.
-    * 조치 가이드 및 기술 지원에 대한 상세 내용은 [사용자 가이드](https://alpha-docs.toast.com/ko/Security/Vaccine/ko/console-guide/)를 참고하시기 바랍니다.
+    * 조치 가이드 및 기술 지원에 대한 상세 내용은 [사용자 가이드](https://docs.toast.com/ko/Security/Vaccine/ko/console-guide/)를 참고하시기 바랍니다.
  
 ## 특이 사항
 
 * Instance Image 복제시 Vaccine Agent 삭제 후 Image 생성 기능 사용을 권장합니다.
     * 원본 및 복제된 Instance의 Vaccine 이 오동작하게 됩니다.
-    * Vaccine Agent를 포함하여 복제한 경우 사용 방법은 [사용자 가이드](https://alpha-docs.toast.com/ko/Security/Vaccine/ko/console-guide/)를 참고하시기 바랍니다.
+    * Vaccine Agent를 포함하여 복제한 경우 사용 방법은 [사용자 가이드](https://docs.toast.com/ko/Security/Vaccine/ko/console-guide/)를 참고하시기 바랍니다.
 * Auto Scale을 이용한 백신 기능 사용 안내는 고객센터로 문의하시면 상세히 설명드리겠습니다.
 
 ## 서비스 구조
