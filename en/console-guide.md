@@ -4,12 +4,13 @@ Vaccine Agent 활성화 및 비활성화 절차와 상품 이용중 특정 상�
 
 ## Vaccine Agent 활성화 절차
 
+인스턴스의 이미지 OS에 따라 백신 설치 스크립트를 불러옵니다.
+
+![vaccine_01_201812.png](https://static.toastoven.net/prod_vaccine/vaccine_01_201812.png)
+
 ### 리눅스 계열 Agent
 
 1\. 설치 스크립트 '클립보드 복사'
-
-<center>![alt](http://static.toastoven.net/prod_vaccine/linux-1.jpg)</center>
-<center>[그림1] 리눅스 계열 설치 스크립트</center>
 
 2\. 설치 대상 Instance 터미널 접속
 
@@ -56,19 +57,9 @@ Command session completed.
 [root@vaccine-test ~]#
 ```
 
-4\. 웹콘솔 새로고침 및 사용시작
-
-* 새로고침을 클릭하면 현황 리스트에 설치된 Agent 정보가 표시됩니다.
-* 사용시작 버튼을 클릭하면 상품 사용이 시작됩니다.
-<center>![alt](http://static.toastoven.net/prod_vaccine/linux-2.jpg)</center>
-<center>[그림2] 리눅스 계열 사용시작</center>
-
 ### 윈도우 계열 Agent
 
 1\. 콘솔 스크립트 복사
-
-<center>![alt](http://static.toastoven.net/prod_vaccine/window-1.jpg)</center>
-<center>[그림3] 윈도우 계열 설치 스크립트</center>
 
 2\. 설치 대상 Instance 터미널 접속
 
@@ -127,41 +118,29 @@ Command session completed.
 
 C:\Users\Administrator>
 ```
+### 사용시작
 
-4\. 웹콘솔 새로고침 및 사용시작
+![vaccine_02_201812.png](https://static.toastoven.net/prod_vaccine/vaccine_02_201812.png)
 
-* 새로고침을 클릭하면 현황 리스트에 설치된 Agent 정보가 표시됩니다.
-* 사용시작 버튼을 클릭하면 상품 사용이 시작됩니다.
-<center>![alt](http://static.toastoven.net/prod_vaccine/window-2.jpg)</center>
-<center>[그림4] 윈도우 계열 사용시작</center>
+새로고침을 클릭하면 현황 리스트에 설치된 Agent 정보가 표시됩니다.
+사용시작 버튼을 클릭하면 상품 사용이 시작됩니다.
 
 ## Vaccine Agent 비활성화 절차
 
-### 리눅스 계열 Agent
+![vaccine_03_201812.png](https://static.toastoven.net/prod_vaccine/vaccine_03_201812.png)
 
 1\. 웹콘솔 사용중지
 
 * 사용종료 버튼을 클릭하여 백신 사용을 중지합니다.
-<center>![alt](http://static.toastoven.net/prod_vaccine/linux-3.jpg)</center>
-<center>[그림5] 리눅스 계열 사용중지</center>
-
-2\. 백신 Agent 삭제
-
+### 리눅스 계열 Agent
 * Instance에 접속하여 Vaccine Agent를 삭제합니다.
     * CentOS: rpm -e ds_agent 실행
     * Debian/Ubuntu: apt-get remove ds-agent 실행
+
 ### 윈도우 계열 Agent
-
-1\. 웹콘솔 사용중지
-
-* 사용종료 버튼을 클릭하여 백신 사용을 중지합니다.
-<center>![alt](http://static.toastoven.net/prod_vaccine/window-3.jpg)</center>
-<center>[그림6] 윈도우 계열 사용중지</center>
-
-2\. 백신 Agent 삭제
-
 * Instance에 접속하여 Vaccine Agent를 삭제합니다.
     * 프로그램 및 기능 메뉴에서 "Trend Micro Deep Security Agent" 삭제
+
 ## Vaccine Quick 가이드
 
 ### 파일 복원 가이드
@@ -170,9 +149,6 @@ C:\Users\Administrator>
 * 복원 툴을 [다운로드](http://static.toastoven.net/prod_vaccine/QFAdminUtil_win32.zip) 합니다.
 * 다운로드한 QFAdminUtil_win32.zip 파일을 windows OS 환경에서 압축해제 합니다.
 * QDecrypt.exe 실행 후 격리된 파일을 열고 파일을 복원합니다.
-<center>![alt](http://static.toastoven.net/prod_vaccine/restore.jpg)</center>
-<center>[그림7] 복원 툴 실행 및 격리된 파일 복원</center>
-
 2\. 격리 파일 위치
 
 * Linux : /var/opt/ds_agent/guest/0000-0000-0000/quarantined
