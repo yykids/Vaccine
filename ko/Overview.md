@@ -22,7 +22,7 @@
     * 복원 서비스는 콘솔內 구현 예정이며, 상세 내용은 [사용자 가이드](http://docs.toast.com/ko/Security/Vaccine/ko/console-guide/)를 참고하시기 바랍니다.
 * 백신으로 인한 Instance 오동작시 조치 가이드 및 기술 지원 서비스를 제공합니다.
     * 조치 가이드 및 기술 지원에 대한 상세 내용은 [사용자 가이드](http://docs.toast.com/ko/Security/Vaccine/ko/console-guide/)를 참고하시기 바랍니다.
- 
+
 ## 특이 사항
 
 * Instance Image 복제시 Vaccine Agent 삭제 후 Image 생성 기능 사용을 권장합니다.
@@ -32,5 +32,4 @@
 
 ## 서비스 구조
 
-<center>![alt](http://static.toastoven.net/prod_vaccine/structure.png)</center>
-<center>[그림1] Vaccine 서비스 구성도</center>
+![vaccine_00_201812.png](https://static.toastoven.net/prod_vaccine/vaccine_00_201812.png)
