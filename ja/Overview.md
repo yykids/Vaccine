@@ -32,4 +32,4 @@
 
 ## サービス構造
 
-![vaccine_00_201812.png](https://static.toastoven.net/prod_vaccine/vaccine_00_201812.png)
+![vaccine_00_201903_en.png](https://static.toastoven.net/prod_vaccine/vaccine_00_201903_en.png)
