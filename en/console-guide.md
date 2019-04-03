@@ -1,24 +1,24 @@
-## Security > Vaccine > 콘솔 사용 가이드
+## Security > Vaccine > Console Guide 
 
-여기에서는 Vaccine Agent 활성화 및 비활성화 절차와 서비스 사용법을 설명합니다.
+This document describes the procedure of enabling and disabling vaccine agents, and how to apply the service. 
 
-## Vaccine Agent 활성화 절차
+## Enabling Vaccine Agents 
 
-인스턴스의 이미지 OS에 따라 백신 설치 스크립트를 불러옵니다.
+Import vaccine installation script, for each OS of an instance image. 
 
 ![vaccine_01_201812.png](https://static.toastoven.net/prod_vaccine/vaccine_01_201812.png)
 
-### Linux 계열 Agent
+### For Linux 
 
-1\. 설치 스크립트를 복사하려면 **클립보드 복사**를 클릭합니다.
+1\. To copy installation script, click  **Copy Clipboard**.
 
-2\. 설치 대상 인스턴스 터미널에 접속합니다.
+2\. Access terminal for an instance to install. 
 
-3\. 관리자 권한으로 Agent 스크립트를 생성하고 실행합니다.
+3\. At the administrator's authority, create and execute an agent script. 
 
-* vi 편집기 등으로 스크립트를 생성합니다.
-* 생성한 스크립트 파일의 권한을 변경합니다.
-* 파일을 실행합니다.
+* Create a script by using vi editor. 
+* Change authority of the script file which is created. 
+* Execute file. 
 ```
 [root@vaccine-test ~]# cd ~
 [root@vaccine-test ~]# vi agent.sh
@@ -57,17 +57,17 @@ Command session completed.
 [root@vaccine-test ~]#
 ```
 
-### Windows 계열 Agent
+### For Windows 
 
-1\. 콘솔 스크립트를 복사합니다.
+1\. Copy console script. 
 
-2\. 설치 대상 인스턴스 터미널에 접속합니다.
+2\. Access terminal for an instance to install.  
 
-3\. 관리자 권한으로 Agent 스크립트를 생성하고 실행합니다.
+3\. At the administrator's authority, create and execute agent script. 
 
-* 메모장과 같은 텍스트 에디터로 스크립트 파일을 생성합니다.
-* 관리자 권한으로 **명령 프롬프트**(cmd) 창을 활성화합니다.
-* powershell -file "파일 경로/파일명" 형태로 실행합니다.
+* Create a script file by using text editor, like memo pad. 
+* Enable the **Command Prompt** (cmd) window, at the administrator's authority.   
+* Execute in the format of powershell -file "file path/file name". 
 ```
 Microsoft Windows [Version 6.3.9600]
 (c) 2013 Microsoft Corporation. All rights reserved.
@@ -75,22 +75,22 @@ Microsoft Windows [Version 6.3.9600]
 C:\Users\Administrator>powershell -file "agent.ps1"
 
 
-    디렉터리: C:\Users\Administrator\AppData\Roaming\Trend Micro\Deep Security Agent
+    Directory: C:\Users\Administrator\AppData\Roaming\Trend Micro\Deep Security Agent
 
 
 Mode                LastWriteTime     Length Name
 ----                -------------     ------ ----
-d----      2018-06-05   오후 2:37            installer
-기록이 시작되었습니다. 출력 파일은 C:\Users\Administrator\AppData\Roaming\Trend Micro\Deep Security Agent\installer\dsa_deploy.log입니다.
-오후 2:37:23 - DSA download started
-오후 2:37:23 - Download Deep Security Agent Package
+d----      2018-06-05   2:37 pm            installer
+Recording has started. The output is C:\Users\Administrator\AppData\Roaming\Trend Micro\Deep Security Agent\installer\dsa_deploy.log.
+2:37:23 pm - DSA download started
+2:37:23 pm - Download Deep Security Agent Package
 https://106.249.21.88:4119/software/agent/Windows/x86_64/
-오후 2:37:24 - Downloaded File Size:
+2:37:24 pm - Downloaded File Size:
 13897728
-오후 2:37:24 - DSA install started
-오후 2:37:24 - Installer Exit Code:
+2:37:24 pm - DSA install started
+2:37:24 pm - Installer Exit Code:
 0
-오후 2:37:32 - DSA activation started
+2:37:32 pm - DSA activation started
 HTTP Status: 200 - OK
 Activation will be re-attempted 30 time(s) in case of failure
 dsa_control
@@ -113,121 +113,121 @@ Received a 'SetSecurityConfiguration' command from the manager.
 Received a 'GetAgentEvents' command from the manager.
 Received a 'GetAgentStatus' command from the manager.
 Command session completed.
-기록이 중지되었습니다. 출력 파일은 C:\Users\Administrator\AppData\Roaming\Trend Micro\Deep Security Agent\installer\dsa_deploy.log입니다.
-오후 2:38:29 - DSA Deployment Finished
+Recording is suspended. The output is C:\Users\Administrator\AppData\Roaming\Trend Micro\Deep Security Agent\installer\dsa_deploy.log.
+2:38:29 pm - DSA Deployment Finished
 
 C:\Users\Administrator>
 ```
-### 사용 시작
+### Start Service 
 
 ![vaccine_02_201812.png](https://static.toastoven.net/prod_vaccine/vaccine_02_201812.png)
 
-새로고침을 클릭하면 현황 목록에 설치된 Agent 정보가 표시됩니다.
-**사용시작** 버튼을 클릭하면 서비스 사용이 시작됩니다.
+Click Refresh to find information of agents that are installed on the list of current status. 
+Click **Start Service** to start the service. 
 
-## Vaccine Agent 비활성화 절차
+## Disabling Vaccine Agents 
 
 ![vaccine_03_201812.png](https://static.toastoven.net/prod_vaccine/vaccine_03_201812.png)
 
-1\. 웹 콘솔 사용 중지
+1\. Suspend Web Console Service 
 
-* **사용종료** 버튼을 클릭하여 백신 사용을 중지합니다.
-### Linux 계열 Agent
-* 인스턴스에 접속하여 Vaccine Agent를 삭제합니다.
-    * CentOS: rpm -e ds_agent 실행
-    * Debian/Ubuntu: apt-get remove ds-agent 실행
+* Click **Close Service** to stop vaccine service. 
+### For Linux 
+* Access instance and delete vaccine agent. 
+    * CentOS: Execute rpm -e ds_agent 
+    * Debian/Ubuntu: Execute apt-get remove ds-agent 
 
-### Windows 계열 Agent
-* 인스턴스에 접속하여 Vaccine Agent를 삭제합니다.
-    * 프로그램 및 기능 메뉴에서 **Trend Micro Deep Security Agent**를 삭제합니다.
+### For Windows 
+* Access instance and delete vaccine agent. 
+    * On Programs and Features, delete **Trend Micro Deep Security Agent**.
 
-## Vaccine 서비스 사용법
+## Applying Vaccine Service 
 
-### 파일 복원 가이드
-1\. 파일 복원
+### Guide for File Restoration 
+1\. File Restoration 
 
-* 복원 툴을 [다운로드](http://static.toastoven.net/prod_vaccine/QFAdminUtil_win32.zip)합니다.
-* 다운로드한 QFAdminUtil_win32.zip 파일을 Windows OS 환경에서 압축 해제합니다.
-* QDecrypt.exe 실행 후 격리된 파일을 열고 파일을 복원합니다.
+* [Download](http://static.toastoven.net/prod_vaccine/QFAdminUtil_win32.zip) a restoration tool. 
+* Decompress QFAdminUtil_win32.zip, which is downloaded, on Windows. 
+* Execute QDecrypt.exe and open isolated files and restore them.  
 
-2\. 격리 파일 위치
+2\. Location of Isolated Files 
 
 * Linux : /var/opt/ds_agent/guest/0000-0000-0000/quarantined
 * Windows : C:\ProgramData\Trend Micro\AMSP\quarantine
-    * 격리 파일이 보이지 않으면, **컴퓨터** 또는 **파일 탐색기** 메뉴에서 **폴더 및 검색 옵션**을 클릭한 후<br>
-      **보기** 탭에서 **보호된 운영체제 파일 숨기기**를 선택 해제하고 **숨김 파일, 폴더 및 드라이브 표시**를 선택합니다.
+    * If you cannot find isolated files, click **Folder and Search Option** in **Computer** or **File Search**,  <br>deselect **Hide Protected Operating System Files** from the **View** tab, and select **Show Hidden Files, Folders and Drives**. 
+      
 
-### 임시 조치 가이드
+### Temporary Solution Guide 
 
-1\. 삭제
+1\. Delete 
 
-#### Linux 계열 Agent
-* 인스턴스에 접속하여 Vaccine Agent를 삭제합니다.
-    * CentOS: rpm -e ds_agent 실행
-    * Debian/Ubuntu: apt-get remove ds-agent 실행
+#### For Linux 
+* Access instance and delete vaccine agent. 
+    * CentOS: Execute rpm -e ds_agent 
+    * Debian/Ubuntu: Execute apt-get remove ds-agent 
 
-#### Windows 계열 Agent
-* 인스턴스에 접속하여 Vaccine Agent를 삭제합니다.
-    * 프로그램 및 기능 메뉴에서 **Trend Micro Deep Security Agent**를 삭제합니다.
+#### For Windows 
+* Access instance and delete vaccine agent. 
+    * On Programs and Features, delete **Trend Micro Deep Security Agent**.
 
-2\. 분석 파일 전달
+2\. Deliver Analysis Files 
 
-* 재발 방지를 위한 원인 분석을 위해 다음 경로의 파일을 수집하여 고객 센터로 분석을 요청합니다.
+* To analyze causes to prevent recurrence, collect files of the following paths and request to Customer Center for analysis.  
     * Linux
-        * /opt/ds_agent/dsa_control -d 실행
-        * /var/opt/ds_agent/diag/랜덤10자리숫자.zip 파일 분석 요청
+        * Execute /opt/ds_agent/dsa_control -d 
+        * Request for analysis of /var/opt/ds_agent/diag/random 10-digit numbers.zip file 
     * Windows
-        * C:\Program Files\Trend Micro\Deep Security Agent\dsa_control -d 실행
-        * C:\Program Files\Trend Micro\Deep Security Agent\diag\랜덤10자리숫자.zip 파일 분석 요청
-* 자세한 분석을 위해 문제 발생 상황에서 디버깅 수행 후 생성된 파일을 추가로 요청할 수 있습니다.
+        * Execute C:\Program Files\Trend Micro\Deep Security Agent\dsa_control -d 
+        * Request for analysis of C:\Program Files\Trend Micro\Deep Security Agent\diag\random 10-digit numbers. zip file 
+* To analyze in more details, when an issue occurs, you may perform debugging first and request for more created files.
 
-### 이미지 복제 시 사용 가이드
+### User Guide for Image Replication 
 
-Vaccine Agent가 포함된 Private Image 기반 인스턴스 생성 시 백신 사용 가이드입니다.
+This guide regards to using vaccines for the creation of private image-based instances, including vaccine agents. 
 
-* 인스턴스에 접속하여 각각 해당하는 스크립트를 생성 및 실행하여 설치합니다.
-* Vaccine Agent 활성화 가이드에 따라 서비스 화면에서 새로고침 및 **사용시작** 버튼을 클릭하면 사용할 수 있습니다.
+* Access instance, and install each script by creation or execution. 
+* Following the guide to enable vaccine agents, click Refresh and **Start Service** on the service page. 
 
-※ 주의 사항
+※ Caution 
 
-* 스크립트 내용 중 "group:앱키"의 앱키는 서비스 화면의 **URL & Appkey** 메뉴 내 Appkey값으로 변경해야 합니다.
-* 사용을 원치 않는 복제 인스턴스는 불필요한 리소스가 낭비되지 않도록 설치된 Agent 삭제를 권장합니다.
-* '사용시작' 후 서비스 사용 상태는 즉시 '상품종료' 상태가 활성화되지만, 백신 동작은 최초 설치와 마찬가지로 최대 약 10분 뒤부터 정상 동작합니다.
+* Change Appkey of "group:Appkey" in the script, into that of **URL & Appkey** on the service page. 
+* For unwanted replication instances, it is recommended to delete installed agents so as not to waste unnecessary resources.   
+* After 'Start Service', the service status immediately enables 'Close Service', but vaccines start to operate in no more than 10 minutes, like the initial installation.  
 
-1\. Linux 계열 Agent 스크립트
+1\. Agent Script for Linux
 
 ```
 #!/bin/bash
 IP=`ifconfig eth0 | grep -w -o '[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}' | head -1`
 HOSTNAME=`hostname`
 /opt/ds_agent/dsa_control -r
-/opt/ds_agent/dsa_control -a dsm://106.249.21.88:4120/ "group:앱키" "displayname:$IP" "hostname:$HOSTNAME"
+/opt/ds_agent/dsa_control -a dsm://106.249.21.88:4120/ "group:Appkey" "displayname:$IP" "hostname:$HOSTNAME"
 ```
 
-2\. Windows 계열 Agent 스크립트
+2\. Agent Script for Windows 
 
 ```
 @echo off
 FOR /F "tokens=1" %%a IN ('powershell -Command "((Get-WmiObject win32_networkadapterconfiguration | select ipaddress) | findstr .*[0-9].\.).Split(',')[0].Split('{')[-1]"') DO set IP=%%a
-"%PROGRAMFILES%\Trend Micro\Deep Security Agent\dsa_control" -r | "%PROGRAMFILES%\Trend Micro\Deep Security Agent\dsa_control" -a dsm://106.249.21.88:4120/ "group:앱키" "displayname:%IP%"
+"%PROGRAMFILES%\Trend Micro\Deep Security Agent\dsa_control" -r | "%PROGRAMFILES%\Trend Micro\Deep Security Agent\dsa_control" -a dsm://106.249.21.88:4120/ "group:Appkey" "displayname:%IP%"
 ```
-※ 배치 파일(.bat)로 생성하여 스크립트를 실행해야 합니다.
+※ Script must be created in batch file (.bat) for execution. 
 
-### Auto Scale 사용 가이드
-Auto Scale을 이용한 백신 기능 사용 안내는 고객 센터로 문의하시면 자세히 설명드리겠습니다.
+### User Guide for Auto Scale 
+Regarding the use of vaccines by auto scale, contact Customer Center.   
 
-## 운영 문의
+## Operational Inquiries 
 
-### 문의 대상
+### Inquiries 
 
-1\. 특정 파일 및 폴더 예외 처리
-2\. Agent 설치 실패 문의
-3\. 백신 이벤트 탐지 관련 문의
-4\. 정상 파일 오진 신고 및 복원 관련 문의
-5\. 백신으로 인한 인스턴스 오동작 조치 및 원인 분석 관련 문의
+1\. Handling exceptions for particular files and folders 
+2\. Failure in agent installation 
+3\. Detecting vaccine events 
+4\. Wrong report of normal files and restorations 
+5\. Solutions to abnormal instance operations due to vaccine issues, and cause analysis 
 
-### 문의 방법
+### To Inquire 
 
-1\. 문의 방법: **고객 센터 > 1:1 문의**
-2\. 대응 시간: 평일 09:00~18:00
+1\. To Inquire: Go to **Customer Center > 1:1 Inquiry**
+2\. Business Hours: 9 to 6, weekdays
 
