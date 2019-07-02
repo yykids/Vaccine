@@ -3,16 +3,17 @@
 ### June 25, 2019
 
 #### Feature Updates
-* [Console] Put more emphasis on the phrases asking of user's consent 
-* [Console] Host changed for CAB appkey authentication
+* Put more emphasis on the phrases asking of user's consent 
+* Host changed for CAB appkey authentication
 
 
 ### May 14, 2019
 
-#### Feature Updates
-* [API] Changes in the mail delivery processing 
-* [Console] Translation enabled into multiple languages 
+#### Updates
+* Changes in the mail delivery processing 
+* Translation enabled into multiple languages 
 * [API] Response to change of API structure due to upgrades in vaccine versions  
+
 
 ### 2019.02.26
 
