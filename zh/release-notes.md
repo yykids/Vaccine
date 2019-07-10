@@ -1,18 +1,18 @@
-## Security > Vaccine > 릴리스 노트
+## Security > Vaccine > Release Notes
 
-### 2019.06.25
+### June 25, 2019
 
-#### 기능 개선
-* 이용자 동의문 주요 문구 강조
-* CAB Appkey 인증 호스트 변경
+#### Feature Updates
+* Put more emphasis on the phrases asking of user's consent 
+* Host changed for CAB appkey authentication
 
 
-### 2019.05.14
+### May 14, 2019
 
-#### 기능 개선
-* 메일 발송 처리 변경
-* 다국어 번역 반영
-* [API] 백신 버전 업그레이드에 따른 API 구조 변경 대응
+#### Updates
+* Changes in the mail delivery processing 
+* Translation enabled into multiple languages 
+* [API] Response to change of API structure due to upgrades in vaccine versions  
 
 
 ### 2019.02.26

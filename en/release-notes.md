@@ -1,4 +1,4 @@
-## Security > Vaccine > 릴리스 노트
+## Security > Vaccine > Release Notes
 
 ### June 25, 2019
 
