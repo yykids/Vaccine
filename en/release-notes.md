@@ -4,7 +4,6 @@
 
 #### Feature Updates
 * Put more emphasis on the phrases asking of user's consent 
-* Host changed for CAB appkey authentication
 
 
 ### May 14, 2019
