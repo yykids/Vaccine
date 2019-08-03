@@ -25,6 +25,7 @@
 
 ## 특이 사항
 
+* Vaccine 서비스는 외부 네트워크에 접속할 수 있는 인스턴스에서만 이용할 수 있습니다.
 * 인스턴스 이미지 복제 시 Vaccine Agent 삭제 후 이미지 생성 기능 사용을 권장합니다.
     * 원본 및 복제된 인스턴스의 Vaccine이 오동작하게 됩니다.
     * Vaccine Agent를 포함하여 복제한 경우 사용 방법은 [사용자 가이드](http://docs.toast.com/ko/Security/Vaccine/ko/console-guide/)를 참고하시기 바랍니다.
