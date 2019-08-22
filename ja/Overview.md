@@ -25,6 +25,7 @@
 
 ## 特記事項
 
+* Vaccineサービスは、外部ネットワークに接続できるインスタンスでのみ利用できます。
 * インスタンスイメージ複製時、Vaccine Agentを削除した後、イメージ作成機能を使用することを推奨します。
     *原本および複製されたインスタンスのVaccineが誤作動します。
     * Vaccine Agentを含めて複製した場合の使用方法は、[ユーザーガイド](http://docs.toast.com/ko/Security/Vaccine/ko/console-guide/)を参照してください。
