@@ -25,6 +25,7 @@ With recognized solutions of Deep Security by Trend Micro, users are protected o
 
 ## Special Features 
 
+* The Vaccine Service is available only on instances which can access external network.
 * To replicate instance images, it is recommended to delete vaccine agents first and create images. 
     * Otherwise, vaccines for the origin and replicated instances may not operate properly. 
     * See [User Guide](http://docs.toast.com/ko/Security/Vaccine/ko/console-guide/) on how to use replications, including vaccine agents. 
