@@ -2,21 +2,23 @@
 
 ### August 27, 2019
 
-#### Feature Updates
-* Added Guide Messages for Vaccine Service
+#### Feature Updates 
+* [Console] Same fonts applied for multiple languages 
+* [Console] Logins processed for redirection 
+* [Console] Added Guide Messages
 
 
 ### June 25, 2019
 
 #### Feature Updates
-* Put more emphasis on the phrases asking of user's consent 
+* [Console] Put more emphasis on the phrases asking of user's consent 
 
 
 ### May 14, 2019
 
 #### Updates
-* Changes in the mail delivery processing 
-* Translation enabled into multiple languages 
+* [API] Changes in the mail delivery processing 
+* [Console] Translation enabled into multiple languages 
 
 
 ### 2019.02.26
