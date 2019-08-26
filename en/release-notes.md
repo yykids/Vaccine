@@ -1,5 +1,11 @@
 ## Security > Vaccine > Release Notes
 
+### August 27, 2019
+
+#### Feature Updates
+* Added Guide Messages for Vaccine Service
+
+
 ### June 25, 2019
 
 #### Feature Updates
@@ -11,7 +17,6 @@
 #### Updates
 * Changes in the mail delivery processing 
 * Translation enabled into multiple languages 
-* [API] Response to change of API structure due to upgrades in vaccine versions  
 
 
 ### 2019.02.26
@@ -23,7 +28,7 @@
 ### 2019.01.29
 
 #### 버그 수정
-* [Console] CAB API 호출 파라메터 변경: ProductId
+* [Console] CAB API 호출 파라메터 변경
 
 
 ### 2018.12.27
@@ -35,7 +40,7 @@
 ### 2018.11.27
 
 #### 기능 개선/변경
-* [API] 데이터 관리 정책 반영: 상품 비활성화 시 관련 데이터 삭제
+* [API] 데이터 관리 정책 반영
 
 
 ### 2018.10.23
@@ -48,7 +53,7 @@
 
 #### 기능 개선/변경
 
-* 백신 이벤트 탐지 현황 정보 이메일 수신 기능 추가
+* [API] 백신 이벤트 탐지 현황 정보 이메일 수신 기능 추가
 
 
 ### 2018.06.26
