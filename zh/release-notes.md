@@ -1,5 +1,12 @@
 ## Security > Vaccine > Release Notes
 
+### Nov. 12, 2019
+
+#### Feature Updates 
+* [API] Vaccine manager upgraded
+* [Console] Service guide message deleted  
+
+
 ### August 27, 2019
 
 #### Feature Updates 
