@@ -6,7 +6,7 @@ This document describes the procedure of enabling and disabling vaccine agents, 
 
 Import vaccine installation script, for each OS of an instance image. 
 
-![vaccine_01_201812.png](https://static.toastoven.net/prod_vaccine/vaccine_01_201812.png)
+![vaccine_01_en_202008.png](https://static.toastoven.net/prod_vaccine/vaccine_01_en_202008.png)
 
 ### For Linux 
 
@@ -120,14 +120,14 @@ C:\Users\Administrator>
 ```
 ### Start Service 
 
-![vaccine_02_201812.png](https://static.toastoven.net/prod_vaccine/vaccine_02_201812.png)
+![vaccine_02_en_202008.png](https://static.toastoven.net/prod_vaccine/vaccine_02_en_202008.png)
 
 Click Refresh to find information of agents that are installed on the list of current status. 
 Click **Start Service** to start the service. 
 
 ## Disabling Vaccine Agents 
 
-![vaccine_03_201812.png](https://static.toastoven.net/prod_vaccine/vaccine_03_201812.png)
+![vaccine_03_en_202008.png](https://static.toastoven.net/prod_vaccine/vaccine_03_en_202008.png)
 
 1\. Suspend Web Console Service 
 
